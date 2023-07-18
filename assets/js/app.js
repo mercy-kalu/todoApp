@@ -1,5 +1,6 @@
 const page_container = document.getElementById('page-container')
 const task_container = document.getElementById('all-task')
+const nav_child1 = document.getElementById('refresh')
 
 let start_id = 1
 
@@ -118,6 +119,10 @@ const update_page_name = ()=>{
     app_data[selected_page].name = page_name
     set_page()
 }
+function refresh_page() {
+    location.reload();
+}
+
 
 set_page()
 set_task()
