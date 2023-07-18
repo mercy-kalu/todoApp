@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="assets/css/styles.css"/>
+</head>
+<body>
+    <div id="main">
+        <div class="child sidebar">
+            <div id="app_name">All Pages</div>
+
+            <div id="page-container">
+                
+            </div>
+
+            <div id="new-page" onclick="add_page()">New Page</div>
+
+        </div>
+        <div class="child main">
+            <div id="navbar">
+                <div id="page_title">Todo App List</div>
+                <div id="nav-right">
+                    <div class="nav-child">Refresh</div>
+                    <div class="nav-child">Delete Page</div>
+                </div>
+            </div>
+            <div id="task-container">
+                <div id="inner-task-container">
+
+                    <div id="task-container-top">
+                        <input type="text" id="page_name" oninput="update_page_name()" placeholder="Untitled"/>
+                        <div id="add-task" onclick="add_task()">+Add task</div>
+                    </div>
+
+                    <div id="all-task">
+                        
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
