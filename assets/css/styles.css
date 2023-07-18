@@ -16,33 +16,50 @@
     padding:20px;
     background-color: #f0f0f0;
 }
-
-#new-page{
-    border: 1px solid #000000;
+/*---Buttons---*/
+#newPageBtn{
+    border: 1px solid #f42f2f;
+    background-color: #f42f2f;
+    color: white;
+    font-weight: 600;
     text-align: center;
     width:100%;
+    height: 44px;
     padding: 10px 0px;
     cursor: pointer;
+    border-radius: 6px;
 }
 
-.page{
-    margin-bottom: 10px;
-}
-
-#new-page:hover{
-    background-color: #000000;
+#newPageBtn, #addTask:hover{
+    background-color: #f42f2f;
     color:white;
+}
+#addTask{
+    border: 1px solid #f42f2f;
+    color: #f42f2f;
+    font-weight: 600;
+    text-align: center;
+    width:100%;
+    height: 44px;
+    padding: 10px 0px;
+    cursor: pointer;
+    border-radius: 6px;
+    background-color: white;
 }
 
 #page-container{
     margin: 30px 0px;
-}
 
+}
+.page {
+    margin-bottom: 10px;
+}
 #navbar{
-    width:100%;
+    /* width:100%; */
     height:50px;
     display: flex;
     justify-content: space-between;
+ 
 }
 
 .main{
@@ -86,13 +103,6 @@
     outline: none;
 }
 
-#add-task:hover{
-    padding:10px;
-    background-color: #9f9898;
-    border-radius: 10px;
-    text-align: center;
-    color:#ffffff;
-}
 
 
 #all-task{

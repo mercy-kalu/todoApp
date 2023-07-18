@@ -8,7 +8,7 @@ let selected_page = 0
 
 let app_data = [
     {
-        name:"Untitled",
+        name:"New Page",
         task:[
             {name:"Task Name",is_completed:false, id:1},
         ],
@@ -107,7 +107,7 @@ const add_task = () =>{
 
 const add_page = () =>{
     start_id = start_id + 1
-    app_data.push({name:"Untitled",task:[{name:"Task Name",is_completed:false, id:1},],id:start_id})
+    app_data.push({name:"New Page",task:[{name:"Task Name",is_completed:false, id:1},],id:start_id})
 
     console.log(app_data)
     set_page()

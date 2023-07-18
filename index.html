@@ -8,17 +8,17 @@
 </head>
 <body>
     <div id="main">
-        <div class="child sidebar">
+        <section class="child sidebar">
             <div id="app_name">All Pages</div>
 
             <div id="page-container">
                 
             </div>
 
-            <div id="new-page" onclick="add_page()">New Page</div>
+            <button id="newPageBtn" onclick="add_page()">Create New Page</button>
 
-        </div>
-        <div class="child main">
+        </section>
+        <section class="child main">
             <div id="navbar">
                 <div id="page_title">Todo App List</div>
                 <div id="nav-right">
@@ -30,8 +30,8 @@
                 <div id="inner-task-container">
 
                     <div id="task-container-top">
-                        <input type="text" id="page_name" oninput="update_page_name()" placeholder="Untitled"/>
-                        <div id="add-task" onclick="add_task()">+Add task</div>
+                        <input type="text" id="page_name" oninput="update_page_name()" placeholder="Rename Page"/>
+                        <button id="addTask" onclick="add_task()">+ Add task</button>
                     </div>
 
                     <div id="all-task">
@@ -40,7 +40,7 @@
 
                 </div>
             </div>
-        </div>
+        </section>
     </div>
     <script src="assets/js/app.js"></script>
 </body>
